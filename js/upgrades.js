@@ -65,7 +65,7 @@ const UPGS = {
         1: {
             unl() { return player.ranks.rank.gte(1) || player.mainUpg.atom.includes(1) },
             title: "Muscler",
-            start: E(10),
+            start: E(1),
             inc: E(1.2),
             effect(x) {
                 let step = E(1)
