@@ -1,8 +1,8 @@
 const SCALE_START = {
     super: {
         rank: E(60),
-		tier: E(13),
-		tetr: E(7),
+		tier: E(50),
+		tetr: E(10),
 		pent: E(15),
 		hex: E(10),
         massUpg: E(150),
