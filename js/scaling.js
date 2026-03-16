@@ -28,7 +28,7 @@ const SCALE_START = {
     },
 	hyper: {
 		rank: E(150),
-		tier: E(250),
+		tier: E(550),
 		tetr: E(70),
 		pent: E(60),
 		hex: E(60),
