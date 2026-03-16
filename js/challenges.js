@@ -414,7 +414,7 @@ const CHALS = {
         pow: E(1.25),
         start: E(1.989e38),
         effect(x) {
-            let ret = x.mul(0.1).add(1).softcap(1.5,hasElement(39)?1:0.5,0).sub(1)
+            let ret = x.mul(0.15).add(1).softcap(1.5,hasElement(39)?1:0.5,0).sub(1)
             return ret
         },
         effDesc(x) { return "+"+format(x)+"x"+(x.gte(0.5)?" <span class='soft'>(softcapped)</span>":"") },
