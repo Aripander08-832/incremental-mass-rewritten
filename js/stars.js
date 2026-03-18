@@ -30,7 +30,7 @@ const STARS = {
         return s
     },
     softPower() {
-        let p = E(0.75)
+        let p = E(0.78)
         return p
     },
     effect() {
