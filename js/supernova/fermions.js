@@ -242,8 +242,8 @@ const FERMIONS = {
             {
                 maxTier() {
                     if (hasTree("fn10")) return EINF
-                    let x = 15
-                    if (hasTree("fn5")) x += 35
+                    let x = 150
+                    if (hasTree("fn5")) x += 350
                     return x
                 },
                 nextTierAt(x) {
