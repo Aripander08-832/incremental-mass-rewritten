@@ -2,7 +2,7 @@ const PRIM = {
     unl() { return hasTree('unl2') },
     getTheorems() {
         let b = tmp.prim.t_base
-        let x = player.qu.bp.max(1).log(b).mul(2.5).mul(tmp.chal?tmp.chal.eff[14]:1)
+        let x = player.qu.bp.max(1).log(b).mul(5.5).mul(tmp.chal?tmp.chal.eff[14]:1)
         if (!hasElement(63,1)) x = x.scale(1e42,10,0,true)
         return x.root(tmp.prim.prim_pow).floor()
     },
@@ -10,7 +10,7 @@ const PRIM = {
         let b = tmp.prim.t_base
         let t = player.qu.prim.theorems.pow(tmp.prim.prim_pow)
         if (!hasElement(63,1)) t = t.scale(1e42,10,0)
-        let x = E(b).pow(t.div(tmp.chal?tmp.chal.eff[14]:1).div(2.5).add(1))
+        let x = E(b).pow(t.div(tmp.chal?tmp.chal.eff[14]:1).div(5.5).add(1))
 
         return x
     },
