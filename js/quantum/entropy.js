@@ -222,13 +222,13 @@ function calcEntropy(dt) {
     let inf_gs = tmp.preInfGlobalSpeed.mul(dt)
 
     if(player.md.break.upgs[10].gte(1) && player.qu.en.unl){
-		let s1 = Decimal.pow(4,player.supernova.radiation.hz.add(1).log10().add(1).log10().add(1).log10().add(1)).mul(2.5);
+		let s1 = Decimal.pow(4,player.supernova.radiation.hz.add(1).log10().add(1).log10().add(1).log10().add(1)).mul(4.5);
 		if (hasTree("en1")) s1 = s1.add(s1.pow(2)).add(s1.pow(3).div(3)); else s1 = s1.add(s1.pow(2).div(2));
 		s1 = s1.mul(getEnRewardEff(2));
         if (isNaN(s1.mag)) s1=E(0)
 		if(player.qu.en.eth[2].lt(s1))player.qu.en.eth[2] = s1;
         
-		s1 = Decimal.pow(4,player.bh.mass.add(1).log10().add(1).log10().add(1).log10().add(1)).mul(2.5);
+		s1 = Decimal.pow(4,player.bh.mass.add(1).log10().add(1).log10().add(1).log10().add(1)).mul(4.5);
 		if (hasTree("en1")) s1 = s1.add(s1.pow(2)).add(s1.pow(3).div(3)); else s1 = s1.add(s1.pow(2).div(2));
 		s1 = s1.mul(getEnRewardEff(2));
         s1 = s1.mul(tmp.dark.abEff.hr||1)
