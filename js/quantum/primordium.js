@@ -10,7 +10,7 @@ const PRIM = {
         let b = tmp.prim.t_base
         let t = player.qu.prim.theorems.pow(tmp.prim.prim_pow)
         if (!hasElement(63,1)) t = t.scale(1e42,10,0)
-        let x = E(b).pow(t.div(tmp.chal?tmp.chal.eff[14]:1).div(2).add(1))
+        let x = E(b).pow(t.div(tmp.chal?tmp.chal.eff[14]:1).div(1.8).add(2))
 
         return x
     },
