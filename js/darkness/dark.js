@@ -1,6 +1,6 @@
 const DARK = {
     nextEffectAt: [
-        [0,1e4,1e7,1e130],
+        [0,1e4,1e7,1e80],
         [1e6,1e11,1e25,1e130],
         [1e120,1e180,'e345','e800','e2500','e56000','e125500','ee7'],
     ],
@@ -30,9 +30,9 @@ const DARK = {
 
         x.shadow = a.max(1).pow(2).pow(tmp.c16active?1:(tmp.fermions.effs[0][6]||1)).overflow('ee10',0.5)
 
-        if (a.gte(1e12)) x.passive = a.div(1e12).max(1).log10().add(1).pow(2).div(1e3)
-        if (a.gte(1e22)) x.glyph = a.div(1e22).max(1).log10().add(1).root(2).sub(1).div(10).add(1)
-        if (a.gte(1e130)) x.dChal = a.div(1e130).max(1).log10().mul(20).softcap(100,0.5,0,hasBeyondRank(3,12)).floor()
+        if (a.gte(1e4)) x.passive = a.div(1e12).max(1).log10().add(1).pow(2).div(1e3)
+        if (a.gte(1e7)) x.glyph = a.div(1e22).max(1).log10().add(1).root(2).sub(1).div(10).add(1)
+        if (a.gte(1e80)) x.dChal = a.div(1e130).max(1).log10().mul(20).softcap(100,0.5,0,hasBeyondRank(3,12)).floor()
 
         return x
     },
