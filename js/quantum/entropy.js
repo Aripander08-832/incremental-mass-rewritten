@@ -60,7 +60,7 @@ const ENTROPY = {
             title: "Entropic Multiplier",
 
             start: E(100),
-            inc: E(10),
+            inc: E(4),
 
             eff(i) {
                 let x = hasElement(214) ? Decimal.pow(1.1,i.pow(.8)) : hasElement(114) ? i.add(1).root(1.5) : i.div(2).add(1).root(3)
@@ -71,7 +71,7 @@ const ENTROPY = {
             title: "Entropic Accelerator",
 
             start: E(1000),
-            inc: E(20),
+            inc: E(5),
 
             eff(i) {
                 if (tmp.c16active) return E(1)
@@ -83,7 +83,7 @@ const ENTROPY = {
             title: "Entropic Evaporation",
 
             start: E(1000),
-            inc: E(10),
+            inc: E(5),
 
             scale: {s: 10, p: 2},
 
@@ -123,7 +123,7 @@ const ENTROPY = {
             title: "Entropic Scaling",
 
             start: E(1e7),
-            inc: E(10),
+            inc: E(4),
 
             eff(i) {
                 let x = i.root(2).div(10).add(1).pow(-1)
@@ -134,7 +134,7 @@ const ENTROPY = {
             title: "Entropic Condenser",
 
             start: E(1e6),
-            inc: E(100),
+            inc: E(5),
 
             scale: {s: 5, p: 2.5},
 
