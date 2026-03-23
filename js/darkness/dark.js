@@ -30,7 +30,7 @@ const DARK = {
 
         x.shadow = a.max(1).pow(2).pow(tmp.c16active?1:(tmp.fermions.effs[0][6]||1)).overflow('ee10',0.5)
 
-        if (a.gte(1e3)) x.passive = a.div(200).max(1).log10().add(1).pow(2).div(1)
+        if (a.gte(1e3)) x.passive = a.div(200).max(1).log10().add(1).pow(2).div(10)
         if (a.gte(1e6)) x.glyph = a.div(1e6).max(1).log10().add(1).root(2).sub(1).div(10).add(1)
         if (a.gte(1e80)) x.dChal = a.div(1e80).max(1).log10().mul(20).softcap(100,0.5,0,hasBeyondRank(3,12)).floor()
 
