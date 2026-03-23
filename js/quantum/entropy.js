@@ -136,7 +136,7 @@ const ENTROPY = {
             start: E(1e6),
             inc: E(5),
 
-            scale: {s: 5, p: 2.5},
+            scale: {s: 5, p: 1.1},
 
             eff(i) {
                 let x = player.qu.en.amt.add(1).log10().mul(2).add(1).pow(i.pow(0.8))
